@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <!--google fonts-->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="menu__item"><a href="/" class="menu__link">O nás</a></li>
+            <li class="menu__item"><a href="/kurzy/" class="menu__link">Kurzy</a></li>
+            <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+        </ul>
+    </nav>
+
+ 
+
+        {{ content | safe }}
+
+    
+
+    <footer class="footer">
+
+    </footer>
+    
+</body>
+</html>
