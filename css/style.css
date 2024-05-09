@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+}
+
+h1, h2, h3 {
+  color: #F5F5F1;
+}
+
+h1, h2 {
+  font-family: "merlin", sans-serif;
+  font-weight: 400;
+}
+
+svg {
+  float: left;
+}/*# sourceMappingURL=style.css.map */
