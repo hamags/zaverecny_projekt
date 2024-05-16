@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -8,11 +9,15 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #121212;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 30px;
 }
 
 h1, h2, h3 {
-  color: #F5F5F1;
+  color: #121212;
 }
 
 h1, h2 {
@@ -20,6 +25,396 @@ h1, h2 {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
 svg {
   float: left;
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #F5F5F1, rgb(251, 246, 246));
+  width: auto;
+  height: 100%;
+  box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+}
+
+.header__left {
+  display: flex;
+}
+
+a.logo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 3em;
+}
+
+.header__left .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 850px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+}
+nav .toggle_btn {
+  color: #121212;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .menu__item {
+  display: none;
+}
+
+nav .toggle_btn {
+  display: block;
+}
+
+.dropdown_menu.open {
+  height: 240px;
+  border: 1px solid white;
+}
+
+.dropdown_menu {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 6em;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_menu #contact a {
+  background-color: rgb(229, 9, 20);
+  color: #F5F5F1;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown_menu #contact a:hover {
+  background-color: #B81D24;
+}
+
+.menu__link {
+  color: #121212;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu__item a:hover {
+  color: rgb(229, 9, 20);
+}
+
+@media screen and (min-width: 850px) {
+  .dropdown_menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0;
+    font-family: "merlin", sans-serif;
+  }
+  header nav {
+    display: flex;
+  }
+  header nav ul {
+    display: flex;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    padding: 0;
+  }
+  header nav ul li {
+    display: flex;
+  }
+  .menu__item {
+    display: inline;
+    padding-left: 40px;
+  }
+  .menu__item a:hover {
+    color: rgb(229, 9, 20);
+  }
+  .menu__link {
+    color: #121212;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 13px;
+    transition: 0.3s ease;
+  }
+  header ul #contact a {
+    background-color: rgb(229, 9, 20);
+    color: #F5F5F1;
+    border-radius: 20px;
+    float: right;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  header ul #contact a:hover {
+    background-color: #B81D24;
+  }
+  nav .toggle_btn {
+    display: none;
+  }
+  nav .menu__item {
+    display: inline;
+  }
+}
+.box {
+  text-align: justify;
+}
+
+.inner_container h1 {
+  font-size: 40px;
+}
+.inner_container p {
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #F5F5F1;
+  padding: 0;
+}
+
+.inner_container {
+  background-color: #F5F5F1;
+  padding: 50px;
+  background-size: 30%;
+  border-radius: 5px;
+  box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+  margin: 0 0.5em;
+}
+
+.more_information {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+  font-size: 15px;
+  font-family: "merlin", sans-serif;
+}
+.more_information a {
+  text-decoration: none;
+  color: #121212;
+}
+.more_information a:hover {
+  color: rgb(229, 9, 20);
+}
+
+.img_history, .img_irish-dance {
+  max-width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+.container_history {
+  display: flex;
+  justify-content: center;
+}
+
+#historie p, #irsky-tanec p, #druhy p {
+  padding: 0 1em;
+}
+#historie h1, #historie h2, #historie .img_history, #historie .img_irish-dance, #irsky-tanec h1, #irsky-tanec h2, #irsky-tanec .img_history, #irsky-tanec .img_irish-dance, #druhy h1, #druhy h2, #druhy .img_history, #druhy .img_irish-dance {
+  padding: 1em;
+}
+
+#irsky-tanec {
+  background-color: #F5F5F1;
+}
+
+.irish-dance_box {
+  text-align: center; /* Uprostřed na mobilních zařízeních */
+}
+
+.cantainer_irish-dance_text {
+  max-width: 900px;
+  text-align: justify; /* Zarovnání textu na šířku */
+  justify-content: center; /* Zarovnání textu do středu */
+}
+
+#druhy {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zarovnání obsahu na střed vertikálně */
+  max-width: 800px; /* Maximální šířka sekce */
+  margin: auto;
+}
+#druhy h1, #druhy h2, #druhy p {
+  padding: 0 1em;
+  text-align: justify;
+}
+#druhy h2 {
+  padding-top: 15px;
+}
+
+.box h1, h2 {
+  text-align: center;
+}
+
+#historie, #irskz-tanec, #druhy {
+  padding: 40px 10px;
+}
+
+@media screen and (min-width: 880px) {
+  .box h1 {
+    text-align: left;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-height: 80vh;
+    background-image: url(/images/cerne_kroje.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 55%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .inner_container {
+    width: 54%;
+    float: left;
+    background-color: #F5F5F1;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+    margin: 0 0.5em;
+  }
+  .irish-dance_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .irish-dance_box p {
+    max-width: 900px;
+  }
+  .img_irish-dance {
+    float: right;
+    width: auto;
+    max-height: 700px;
+  }
+  .container_irish-dance_text {
+    display: flex;
+    justify-content: center;
+  }
+  .container_history {
+    display: flex;
+    justify-content: center;
+  }
+  .history_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img_history {
+    max-width: 100%;
+    height: auto;
+    padding: 1em;
+    margin-right: 1em;
+  }
+  .container_history_text {
+    max-width: 900px;
+    text-align: justify; /* Zarovnání textu na šířku */
+    justify-content: center; /* Zarovnání textu do středu */
+  }
+  #druhy h1 {
+    text-align: left; /* Zarovnání nadpisu vlevo */
+  }
+}
+footer .social a {
+  color: white;
+  font-size: 40px;
+  margin: 0 10px;
+}
+
+footer .social a:hover i.fa-facebook {
+  color: #1877F2;
+}
+
+footer .social a:hover i.fa-instagram {
+  color: #E4405F;
+}
+
+footer .social a:hover i.fa-youtube {
+  color: #CD201F;
+}
+
+.footer {
+  background-color: #333; /* Barva pozadí */
+  color: #fff; /* Barva textu */
+  padding: 20px; /* Vnitřní odsazení */
+  text-align: center; /* Zarovnání textu na střed */
+  line-height: 1.5;
+}
+
+.footer h1 {
+  margin: 0; /* Odstranění vnějšího odsazení nadpisu */
+  font-size: 24px; /* Velikost písma pro nadpis h1 */
+  color: white;
+}
+
+.footer h2 {
+  margin-top: 5px; /* Odsazení nadpisu h2 od nadpisu h1 */
+  font-size: 18px; /* Velikost písma pro nadpis h2 */
+  color: white;
+}
+
+.footer a {
+  color: #fff; /* Barva odkazů */
+  text-decoration: none; /* Odstranění podtržení odkazů */
+  margin: 0 10px; /* Odsazení mezi odkazy */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Podtržení odkazů po najetí myší */
+  color: rgb(229, 9, 20);
+}
+
+.footer_menu {
+  margin: 5px 0;
 }/*# sourceMappingURL=style.css.map */

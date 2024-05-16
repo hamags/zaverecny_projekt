@@ -1,1 +1,154 @@
 @use 'colors';
+
+// mobile first
+
+nav .toggle_btn{
+    color: colors.$text;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav .menu__item{
+    display:none;
+}
+
+nav .toggle_btn{
+    display: block;
+}
+
+.dropdown_menu.open{
+    height:240px;
+    border: 1px solid white;
+   }
+
+.dropdown_menu {
+   display: block; 
+   position:absolute;
+   right: 2rem;
+   top: 6em;
+   height: 0;
+   width: 300px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(15px);
+   border-radius: 10px;
+   overflow: hidden;
+   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+   li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   #contact a{
+    background-color: colors.$primary;
+    color: colors.$background;
+    border-radius: 10px;            
+    transition: .3s ease;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.dropdown_menu #contact a:hover{
+    background-color: colors.$secondary;
+}
+
+.menu__link{
+    color: colors.$text;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu__item a:hover{
+    color: colors.$primary;
+}
+
+
+
+
+//responsive design
+
+@media screen and (min-width:850px) {
+
+    .dropdown_menu{
+        display: none;
+    }
+
+        
+   nav {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 0;
+        font-family: 'merlin', sans-serif;
+        
+    }
+        
+    header nav {
+        display: flex;
+    }
+
+    header nav ul{
+        display: flex;
+        column-gap: 5px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: flex;
+    }
+
+    .menu__item{
+        display: inline;
+        padding-left: 40px;
+     
+        a:hover{
+            color: colors.$primary;
+        }
+    }
+
+    .menu__link{
+        color: colors.$text;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 13px;
+        transition: .3s ease;
+
+    }
+
+    
+
+    header ul #contact a{
+        background-color: colors.$primary;
+        color: colors.$background;
+        border-radius: 20px;
+        float: right;
+        position: relative;
+        transition: .3s ease;
+    }
+
+    header ul #contact a:hover{
+        background-color: colors.$secondary;
+    }
+
+    nav .toggle_btn{
+        display: none;
+    }
+
+    nav .menu__item{
+        display: inline
+    }
+    
+}
+
+
+
+
+

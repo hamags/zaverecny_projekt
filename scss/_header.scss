@@ -2,4 +2,46 @@
 
 svg {
     float: left;
+    width: 100px ;
+    height: 100px;
+}
+
+header{
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: colors.$header;
+    width: auto;
+    height: 100%;
+    box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317)
+}
+
+.header__left{
+    display: flex;
+}
+
+a.logo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: 3em;
+}
+
+
+
+.header__left .title{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:850px) {
+
+    header{
+        position:sticky;
+        top:0;
+    }
+    
 }

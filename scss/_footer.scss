@@ -1,1 +1,60 @@
 @use 'colors';
+
+
+
+footer .social a{
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+footer .social a:hover i.fa-facebook{
+    color: #1877F2;
+}
+
+footer .social a:hover i.fa-instagram{
+    color: #E4405F ;
+}
+
+
+footer .social a:hover i.fa-youtube{
+    color: #CD201F;
+}
+
+
+
+
+.footer {
+    background-color: #333; /* Barva pozadí */
+    color: #fff; /* Barva textu */
+    padding: 20px; /* Vnitřní odsazení */
+    text-align: center; /* Zarovnání textu na střed */
+    line-height: 1.5;
+}
+
+.footer h1 {
+    margin: 0; /* Odstranění vnějšího odsazení nadpisu */
+    font-size: 24px; /* Velikost písma pro nadpis h1 */
+    color: white;
+}
+
+.footer h2 {
+    margin-top: 5px; /* Odsazení nadpisu h2 od nadpisu h1 */
+    font-size: 18px; /* Velikost písma pro nadpis h2 */
+    color:white;
+}
+
+.footer a {
+    color: #fff; /* Barva odkazů */
+    text-decoration: none; /* Odstranění podtržení odkazů */
+    margin: 0 10px; /* Odsazení mezi odkazy */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Podtržení odkazů po najetí myší */
+    color: colors.$primary;
+}
+
+.footer_menu{
+    margin: 5px 0;
+}

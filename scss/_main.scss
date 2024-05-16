@@ -1,1 +1,212 @@
 @use 'colors';
+
+.box{
+    text-align: justify;
+}
+
+.inner_container {
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: colors.$background;
+    padding: 0;
+}
+
+.inner_container{
+    background-color: colors.$background;
+    padding: 50px;
+    background-size: 30%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+    margin: 0 0.5em;
+}
+
+.more_information{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'merlin', sans-serif;
+
+    a{
+    text-decoration: none;
+    color: colors.$text;
+    }
+
+    a:hover{
+        color: colors.$primary;
+    }
+
+}
+
+.img_history, .img_irish-dance{
+    max-width: 100%;
+    height: auto;
+    padding: 1em;
+
+}
+
+.container_history{
+    display: flex;
+    justify-content: center;
+}
+
+
+#historie, #irsky-tanec, #druhy{
+    p{
+        padding: 0 1em;
+    }
+    h1, h2, .img_history, .img_irish-dance{
+        padding: 1em;
+}
+}
+
+#irsky-tanec{
+    background-color: colors.$background;
+}
+
+
+
+.irish-dance_box {
+    text-align: center; /* Uprostřed na mobilních zařízeních */
+}
+
+.cantainer_irish-dance_text {
+    max-width: 900px;
+    text-align: justify; /* Zarovnání textu na šířku */
+    justify-content: center; /* Zarovnání textu do středu */
+}
+
+
+#druhy {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zarovnání obsahu na střed vertikálně */
+    max-width: 800px; /* Maximální šířka sekce */
+    margin: auto; 
+
+    h1, h2, p{
+        padding: 0 1em;
+        text-align: justify; 
+    }
+
+    h2{
+        padding-top: 15px;
+    }
+}
+
+.box h1, h2{
+    text-align: center;
+}
+
+#historie, #irskz-tanec, #druhy{
+    padding: 40px 10px;
+}
+
+
+
+
+//responsive design
+
+@media screen and (min-width: 880px){
+    .box h1{
+        text-align: left;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        min-height: 80vh;
+        background-image: url(/images/cerne_kroje.jpg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 55%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0 ;
+    }
+
+    .inner_container{
+        width: 54%;
+        float: left;
+        background-color: colors.$background;
+        padding: 50px;
+        border-radius: 5px;
+        box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+        margin: 0 0.5em;
+
+    }
+
+   
+    .irish-dance_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .irish-dance_box p{
+      max-width: 900px;
+    }
+
+    .img_irish-dance{
+        float: right;
+        width: auto;
+        max-height: 700px;
+    }
+
+    .container_irish-dance_text{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container_history {
+        display: flex;
+        justify-content: center;
+    }
+
+    .history_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img_history {
+        max-width: 100%;
+        height: auto;
+        padding: 1em;
+        margin-right: 1em;
+    }
+
+    .container_history_text {
+        max-width: 900px;
+        text-align: justify; /* Zarovnání textu na šířku */
+        justify-content: center; /* Zarovnání textu do středu */
+    }
+
+    #druhy h1 {
+        text-align: left; /* Zarovnání nadpisu vlevo */
+    }
+
+
+}
+
+
+
+
+
+
+
+
