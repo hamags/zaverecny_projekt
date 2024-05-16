@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -266,20 +265,20 @@ nav .toggle_btn {
 }
 
 .irish-dance_box {
-  text-align: center; /* Uprostřed na mobilních zařízeních */
+  text-align: center;
 }
 
 .cantainer_irish-dance_text {
   max-width: 900px;
-  text-align: justify; /* Zarovnání textu na šířku */
-  justify-content: center; /* Zarovnání textu do středu */
+  text-align: justify;
+  justify-content: center;
 }
 
 #druhy {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Zarovnání obsahu na střed vertikálně */
-  max-width: 800px; /* Maximální šířka sekce */
+  align-items: center;
+  max-width: 800px;
   margin: auto;
 }
 #druhy h1, #druhy h2, #druhy p {
@@ -359,11 +358,11 @@ nav .toggle_btn {
   }
   .container_history_text {
     max-width: 900px;
-    text-align: justify; /* Zarovnání textu na šířku */
-    justify-content: center; /* Zarovnání textu do středu */
+    text-align: justify;
+    justify-content: center;
   }
   #druhy h1 {
-    text-align: left; /* Zarovnání nadpisu vlevo */
+    text-align: left;
   }
 }
 footer .social a {
@@ -385,33 +384,33 @@ footer .social a:hover i.fa-youtube {
 }
 
 .footer {
-  background-color: #333; /* Barva pozadí */
-  color: #fff; /* Barva textu */
-  padding: 20px; /* Vnitřní odsazení */
-  text-align: center; /* Zarovnání textu na střed */
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
   line-height: 1.5;
 }
 
 .footer h1 {
-  margin: 0; /* Odstranění vnějšího odsazení nadpisu */
-  font-size: 24px; /* Velikost písma pro nadpis h1 */
+  margin: 0;
+  font-size: 24px;
   color: white;
 }
 
 .footer h2 {
-  margin-top: 5px; /* Odsazení nadpisu h2 od nadpisu h1 */
-  font-size: 18px; /* Velikost písma pro nadpis h2 */
+  margin-top: 5px;
+  font-size: 18px;
   color: white;
 }
 
 .footer a {
-  color: #fff; /* Barva odkazů */
-  text-decoration: none; /* Odstranění podtržení odkazů */
-  margin: 0 10px; /* Odsazení mezi odkazy */
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .footer a:hover {
-  text-decoration: underline; /* Podtržení odkazů po najetí myší */
+  text-decoration: underline;
   color: rgb(229, 9, 20);
 }
 

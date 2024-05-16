@@ -79,21 +79,21 @@
 
 
 .irish-dance_box {
-    text-align: center; /* Uprostřed na mobilních zařízeních */
+    text-align: center;
 }
 
 .cantainer_irish-dance_text {
     max-width: 900px;
-    text-align: justify; /* Zarovnání textu na šířku */
-    justify-content: center; /* Zarovnání textu do středu */
+    text-align: justify;
+    justify-content: center;
 }
 
 
 #druhy {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Zarovnání obsahu na střed vertikálně */
-    max-width: 800px; /* Maximální šířka sekce */
+    align-items: center; 
+    max-width: 800px; 
     margin: auto; 
 
     h1, h2, p{
@@ -192,12 +192,12 @@
 
     .container_history_text {
         max-width: 900px;
-        text-align: justify; /* Zarovnání textu na šířku */
-        justify-content: center; /* Zarovnání textu do středu */
+        text-align: justify;
+        justify-content: center;
     }
 
     #druhy h1 {
-        text-align: left; /* Zarovnání nadpisu vlevo */
+        text-align: left; 
     }
 
 
