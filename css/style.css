@@ -653,4 +653,147 @@ a.button {
   width: 500px;
   height: auto;
   margin-bottom: 20px;
+}
+
+.gallery {
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.gallery > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.gallery .wide {
+  grid-column: span 2;
+}
+
+.gallery .tall {
+  grid-row: span 2;
+}
+
+.gallery .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #121212;
+  font-style: normal;
+}
+
+.contact a:hover {
+  color: rgb(229, 9, 20);
+}
+
+.contact-right .social {
+  display: flex;
+}
+
+.contact-right .social a {
+  color: #121212;
+  font-size: 40px;
+  margin: 0 10px;
+}
+
+.contact-right .social a:hover i.fa-facebook {
+  color: #1877F2;
+}
+
+.contact-right .social a:hover i.fa-instagram {
+  color: #E4405F;
+}
+
+.contact-right .social a:hover i.fa-youtube {
+  color: #CD201F;
+}
+
+.contact-right .address {
+  margin-top: 50px;
+}
+.contact-right .social {
+  margin-top: 50px;
+  justify-content: center;
+}
+.contact-right .email {
+  margin-top: 10px;
+}
+.contact-right .telefon {
+  margin-top: 20px;
+}
+
+.contact-right a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contact-right h2,
+.contact-right h1,
+.contact-right a,
+.contact-right .social,
+.contact-right .address,
+.contact-left .map,
+.contact-left .left-address {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 850px) {
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact-left, .contact-right {
+    flex: 1;
+    margin: 20px;
+  }
+  .contact-left {
+    order: 1;
+  }
+  .contact-right {
+    order: 2;
+  }
+  .map iframe {
+    width: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
