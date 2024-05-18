@@ -99,6 +99,11 @@
     text-align: center;
 }
 
+.container_irish-dance img{
+    max-width: 500px;
+    height: auto;
+}
+
 .cantainer_irish-dance_text {
     max-width: 900px;
     text-align: justify;
@@ -187,7 +192,9 @@
     .container_irish-dance_text{
         display: flex;
         justify-content: center;
+    
     }
+
 
     .container_history {
         display: flex;
