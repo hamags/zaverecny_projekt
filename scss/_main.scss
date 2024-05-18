@@ -2,12 +2,14 @@
 
 .box{
     text-align: justify;
+   
 }
 
 .inner_container {
     h1{
         font-size: 40px;
-    }
+        text-align: center;
+     }
 
     p{
         font-size: 16px;
@@ -19,7 +21,7 @@
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    background-color: colors.$background;
+    background-color: white;
     padding: 0;
 }
 
@@ -30,6 +32,7 @@
     border-radius: 5px;
     box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
     margin: 0 0.5em;
+
 }
 
 .more_information{
@@ -60,7 +63,9 @@
 .container_history{
     display: flex;
     justify-content: center;
+    
 }
+
 
 
 #historie, #irsky-tanec, #druhy{
@@ -73,9 +78,21 @@
 }
 
 #irsky-tanec{
-    background-color: colors.$background;
-}
+    background-color: white;
 
+    h1{
+        text-align: center;
+    }
+}    
+
+
+#historie{
+    background-color: white;
+
+    h1{
+        text-align: center;
+    }
+}
 
 
 .irish-dance_box {
@@ -113,6 +130,7 @@
 #historie, #irskz-tanec, #druhy{
     padding: 40px 10px;
 }
+
 
 
 

@@ -1,0 +1,84 @@
+@use 'colors';
+
+
+.box_kurzy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-image: url(/images/cernobila.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card {
+    width: 90%;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    transition: box-shadow 0.3s ease;
+    background-color: colors.$background;
+    box-shadow: 7px 7px 15px rgba(48, 48, 48, 0.317);
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 5px 5px 0 0; 
+}
+
+.card-desc {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-desc h3 {
+    margin-top: 0; 
+    font-size: 22px;
+}
+
+.card-desc p {
+    text-align: justify;
+    text-indent: 1em;
+}
+
+.button {
+    display: block;
+    width: 100px;
+    margin: 10px auto 0;
+    padding: 5px;
+    background-color: colors.$primary;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+a.button:hover{
+    background-color: colors.$secondary;
+
+}
+
+a.button{
+    margin-top: 1em;
+}
+      
+
+
+
+@media screen and (min-width: 880px) {
+    .box_kurzy {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .card {
+        width: calc(50% - 20px); /* 50% šířka s mezerou mezi kartami */
+        height: 554px;
+    }
+}

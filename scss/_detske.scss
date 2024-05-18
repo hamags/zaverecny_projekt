@@ -1,0 +1,58 @@
+@use 'colors';
+
+
+
+.detske{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    max-width: 950px;
+    margin: 0 auto; 
+    padding: 40px 20px; 
+
+    h1{
+        text-align: center;
+    }
+}
+
+.card_detske {
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: colors.$background;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card_detske ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card_detske li {
+    padding: 8px 0;
+}
+
+.fotky-detske {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.fotky-detske img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 880px) {
+    .fotky-detske img {
+        flex: 1; 
+        max-width: calc(50% - 20px);
+        margin: 0 10px;
+    }
+}

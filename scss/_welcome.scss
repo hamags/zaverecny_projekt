@@ -1,0 +1,38 @@
+@use 'colors';
+
+
+.welcome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 90px;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/druidi.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%); 
+    z-index: -1;
+}
+
+.welcome h1, .welcome h2 {
+    margin: 10px 0;
+    color: white;
+}
+
+.welcome svg {
+    width: 500px; 
+    height: auto;
+    margin-bottom: 20px;
+}
