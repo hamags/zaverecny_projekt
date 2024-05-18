@@ -32,3 +32,42 @@ title: Dospělé kurzy
                 
             </div>
 </section>
+
+
+<section class="prihlaska">
+   
+    <div class="formular">
+        <h1>PŘIHLÁŠKA</h1>
+        <form action="#" method="post">
+            <label for="jmeno">Jméno: *</label>
+            <input type="text" id="jmeno" name="jmeno" required><br>
+            
+            <label for="prijmeni">Příjmení: *</label>
+            <input type="text" id="prijmeni" name="prijmeni" required><br>
+              
+            <label for="datum_narozeni">Datum narození: *</label>
+            <input type="date" id="datum_narozeni" name="datum_narozeni" required><br>
+            
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="telefon">Telefon: *</label>
+            <input type="tel" id="telefon" name="telefon" required><br>
+            
+            <label for="kurz">Kurz: *</label>
+            <select id="kurz" name="kurz" required>
+                <option value="deti_zacatecnici">Děti začátečníci</option>
+                <option value="deti_pokrocili">Děti pokročilí</option>
+                <option value="dospeli_zacatecnici">Dospělí začátečníci</option>
+                <option value="dospeli_pokrocili">Dospělí pokročilí</option>
+            </select><br>
+            
+            <label for="poznamka">Poznámka</label>
+            <textarea id="poznamka" name="poznamka" rows="4" cols="50"></textarea><br>
+            
+            <button type="submit">Přihlásit</button>
+        </form>
+
+    </div>
+
+</section>

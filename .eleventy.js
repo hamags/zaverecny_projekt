@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("css");
 
+  
     return {
         
         templateFormats: ["njk", "html", "md", "liquid"],
@@ -15,4 +16,3 @@ module.exports = function(eleventyConfig) {
    };
 
    
-
