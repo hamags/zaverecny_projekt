@@ -743,6 +743,13 @@ img {
   display: flex;
 }
 
+.contact-right .fa-envelope {
+  padding-right: 10px;
+}
+.contact-right .fa-phone {
+  padding-right: 10px;
+}
+
 .contact-right .social a {
   color: #121212;
   font-size: 40px;

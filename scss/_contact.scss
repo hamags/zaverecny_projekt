@@ -25,6 +25,16 @@
 
 }
 
+.contact-right {
+    .fa-envelope{
+    padding-right: 10px;
+}
+
+    .fa-phone{
+        padding-right: 10px;
+    }
+}
+
 .contact-right .social a {
     color: colors.$text;
     font-size: 40px;
