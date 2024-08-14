@@ -21,6 +21,13 @@ h1, h2, h3 {
     color: colors.$text
 }
 
+@font-face {
+    font-family: "Merlin";
+    src: url("https://example.com/fonts/Merlin.woff2") format("woff2"),
+         url("https://example.com/fonts/Merlin.woff") format("woff");
+    font-display: swap;
+}
+
 h1, h2, h3{
     font-family: "Merlin","Roboto", sans-serif;
     font-weight: 400;
