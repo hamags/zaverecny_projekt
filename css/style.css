@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3 {
-  font-family: "merlin", sans-serif;
+  font-family: "Roboto", sans-serif, "merlin";
   font-weight: 400;
 }
 
@@ -255,7 +255,7 @@ nav .toggle_btn {
   justify-content: space-between;
   font-weight: 100;
   font-size: 15px;
-  font-family: "merlin", sans-serif;
+  font-family: "Merlin", "Roboto", sans-serif;
 }
 .more_information a {
   text-decoration: none;
@@ -789,6 +789,7 @@ img {
 
 h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .contact-right h2,
