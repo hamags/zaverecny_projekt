@@ -20,7 +20,7 @@ h1, h2, h3 {
 }
 
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merlin", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -161,6 +161,7 @@ nav .toggle_btn {
 
 .menu__link {
   color: #121212;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -261,9 +262,9 @@ nav .toggle_btn {
 .more_information {
   display: flex;
   justify-content: space-between;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 15px;
-  font-family: "Merlin", "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .more_information a {
   text-decoration: none;
@@ -310,7 +311,7 @@ nav .toggle_btn {
 }
 
 .container_irish-dance img {
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
 }
 

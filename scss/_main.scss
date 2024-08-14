@@ -38,9 +38,9 @@
 .more_information{
     display: flex;
     justify-content: space-between;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 15px;
-    font-family:  "Merlin", "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 
     a{
     text-decoration: none;
@@ -100,7 +100,7 @@
 }
 
 .container_irish-dance img{
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
 }
 
